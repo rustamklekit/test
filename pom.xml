@@ -1,0 +1,31 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.rustamklekit.test</groupId>
+	<artifactId>test-project</artifactId>
+	<version>1</version>
+	
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+	
+	
+	<build>
+	  <plugins>
+		<plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-jar-plugin</artifactId>
+		  <version>3.1.0</version>
+		  <configuration>
+			<archive>
+			  <manifest>
+				<addClasspath>true</addClasspath>
+				<classpathPrefix>lib/</classpathPrefix>
+				<mainClass>com.github.rustamklekit.test.App</mainClass>
+			  </manifest>
+			</archive>
+		  </configuration>
+		</plugin>
+	  </plugins>
+	</build>
+</project>
